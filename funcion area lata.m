@@ -1,20 +1,20 @@
-% Title
-% Description
-% Author
-% Date
-% Version
-% Usage 15 
-% Notes
+% Title.          Área mínima lata de chocolate 
+% Description     es un código para el área de una lata de 400g en su interior 
+% Author           Adriana Trejo Patricio, jafet Martinez Meza ,
+% Date.           202123653, 202123172
+% Version.        1.1
+% Usage 
+% Notes.         Aprende bien a hace funciones 
 % limpiar variables
 clear
-% Ejemplo m�nimo de material para envase cilindrico
+% Ejemplo mínimo de material para envase cilindrico
 % Rango de 1..16 en i = 1
 r=1:1:16;
 % Valor de la funcion
 ar=@(r) (pi()*(r.^2)) + (80./(r));
-% funci�n plotear
+% función plotear
 y = (pi()*(r.^2)) + (80./(r));
-%funci�n para determinar valor m�nino
+%función para determinar valor mínino
 resr = fminbnd(ar,1,16);
 %Dibujar x.y
 plot(r, y)
